@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <button type="button" class="menu-button " data-menu-button aria-expanded="false"
+                    aria-controls="menu-container">
+                    <svg width="40" height="40" aria-label="mobile-menu" class="menu-icon">
+                        <use class="icon-cross" href="./images/icons/menu-defs.svg#close-black"></use>
+                        <use class="icon-menu" href="./images/icons/menu-defs.svg#menu_40px "></use>
+                    </svg>
+                </button>
+                <div class="menu-container " id="menu-container" data-menu>
+                    <ul class="left-nav ">
+                        <li class="left-nav__item"><a href="./index.html" class="link-hover">Студия</a></li>
+                        <li class="left-nav__item"><a href="./portfolio.html" class="currentPage ">Портфолио</a></li>
+                        <li class="left-nav__item"><a href="#" class="link-hover">Контакты</a></li>
+                    </ul>
+                    <ul class=" right-nav">
+                        <li class="right-nav__item">
+                            <a href="mailto:info@devstudio.com" class="link-hover">
+                                <svg class="nav-icon icon-envelope" width="16" height="11">
+                                    <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="right-nav__item">
+                            <a href="tel:+380961111111" class="link-hover">
+                                <svg class="nav-icon icon-smartphone" width="10" height="15">
+                                    <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </nav>
+        </div>
+        <!-- <nav class="container">
+                <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <ul class="nav ">
+                    <li class="left-nav__item"><a href="./index.html" class=" currentPage">Студия</a></li>
+                    <li class="left-nav__item"><a href="./portfolio.html" class="link-hover">Портфолио</a></li>
+                    <li class="left-nav__item"><a href="#" class="link-hover">Контакты</a></li>
+                </ul>
+                <ul class="nav right-nav">
+                    <li  class="right-nav__item">
+                        <a href="mailto:info@devstudio.com" class="right-nav">
+                            <svg class="nav-icon icon-envelope">
+                                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li  class="right-nav__item">
+                        <a href="tel:+380961111111" class="right-nav">
+                            <svg class="nav-icon icon-smartphone">
+                                <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </nav> -->
+    </header>
+    <!-- main -->
+    <main >
+        <!-- Filter -->
+        <!-- <h1>Продукти</h1> -->
+        <ul class="filter container">
+            <li><button>Все</button></li>
+            <li><button>Веб-сайты</button></li>
+            <li><button>Приложения</button></li>
+            <li><button>Дизайн</button></li>
+            <li><button>Маркетинг</button></li>
+        </ul>
+        <!-- Products -->
+        <section class="products">
+            <!-- <h2>Продукти</h2> -->
+            <ul class="container products-list">
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project1/project1-desktop@1x.webp 1x,
+                                        ./images/portfolio/project1/project1-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project1/project1-desktop@3x.webp 3x," >
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project1/project1-tablet@1x.webp 1x,
+                                        ./images/portfolio/project1/project1-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project1/project1-tablet@3x.webp 3x," >
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project1/project1-mobile@1x.webp 1x,
+                                        ./images/portfolio/project1/project1-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project1/project1-mobile@3x.webp 3x," >
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project1/project1-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project1/project1-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project1/project1-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project1/project1-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project1/project1-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project1/project1-tablet@3x.jpg 3x,">
+                                <img alt="Проект Технокряк" width="450" height="294" srcset="
+                                        ./images/portfolio/project1/project1-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project1/project1-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project1/project1-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project1/project1-mobile@1x.jpg" >
+                </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Технокряк</h3>
+                            <p>Веб-сайт</p>
+                        </div>
+                    </a href="">
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project2/project2-desktop@1x.webp 1x,
+                                        ./images/portfolio/project2/project2-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project2/project2-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project2/project2-tablet@1x.webp 1x,
+                                        ./images/portfolio/project2/project2-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project2/project2-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project2/project2-mobile@1x.webp 1x,
+                                        ./images/portfolio/project2/project2-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project2/project2-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project2/project2-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project2/project2-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project2/project2-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project2/project2-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project2/project2-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project2/project2-tablet@3x.jpg 3x,">
+                                <img alt="Проект Постер New Orlean vs Golden Star" width="450" height="294" srcset="
+                                        ./images/portfolio/project2/project2-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project2/project2-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project2/project2-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project2/project2-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Постер New Orlean vs Golden Star</h3>
+                            <p>Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project3/project3-desktop@1x.webp 1x,
+                                        ./images/portfolio/project3/project3-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project3/project3-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project3/project3-tablet@1x.webp 1x,
+                                        ./images/portfolio/project3/project3-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project3/project3-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project3/project3-mobile@1x.webp 1x,
+                                        ./images/portfolio/project3/project3-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project3/project3-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project3/project3-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project3/project3-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project3/project3-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project3/project3-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project3/project3-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project3/project3-tablet@3x.jpg 3x,">
+                                <img alt="Проект Ресторан Seafood" width="450" height="294" srcset="
+                                        ./images/portfolio/project3/project3-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project3/project3-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project3/project3-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project3/project3-mobile@1x.jpg">
+                             </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Ресторан Seafood</h3>
+                            <p>Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project4/project4-desktop@1x.webp 1x,
+                                        ./images/portfolio/project4/project4-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project4/project4-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project4/project4-tablet@1x.webp 1x,
+                                        ./images/portfolio/project4/project4-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project4/project4-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project4/project4-mobile@1x.webp 1x,
+                                        ./images/portfolio/project4/project4-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project4/project4-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project4/project4-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project4/project4-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project4/project4-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project4/project4-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project4/project4-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project4/project4-tablet@3x.jpg 3x,">
+                                <img alt="Проект Prime" width="450" height="294" srcset="
+                                        ./images/portfolio/project4/project4-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project4/project4-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project4/project4-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project4/project4-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Проект Prime</h3>
+                            <p>Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project5/project5-desktop@1x.webp 1x,
+                                        ./images/portfolio/project5/project5-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project5/project5-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project5/project5-tablet@1x.webp 1x,
+                                        ./images/portfolio/project5/project5-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project5/project5-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project5/project5-mobile@1x.webp 1x,
+                                        ./images/portfolio/project5/project5-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project5/project5-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project5/project5-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project5/project5-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project5/project5-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project5/project5-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project5/project5-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project5/project5-tablet@3x.jpg 3x,">
+                                <img alt="Проект Boxes" width="450" height="294" srcset="
+                                        ./images/portfolio/project5/project5-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project5/project5-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project5/project5-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project5/project5-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Проект Boxes</h3>
+                            <p>Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project6/project6-desktop@1x.webp 1x,
+                                        ./images/portfolio/project6/project6-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project6/project6-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project6/project6-tablet@1x.webp 1x,
+                                        ./images/portfolio/project6/project6-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project6/project6-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project6/project6-mobile@1x.webp 1x,
+                                        ./images/portfolio/project6/project6-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project6/project6-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project6/project6-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project6/project6-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project6/project6-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project6/project6-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project6/project6-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project6/project6-tablet@3x.jpg 3x,">
+                                <img alt="Проект Inspiration has no Borders" width="450" height="294" srcset="
+                                        ./images/portfolio/project6/project6-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project6/project6-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project6/project6-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project6/project6-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Inspiration has no Borders</h3>
+                            <p>Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project7/project7-desktop@1x.webp 1x,
+                                        ./images/portfolio/project7/project7-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project7/project7-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project7/project7-tablet@1x.webp 1x,
+                                        ./images/portfolio/project7/project7-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project7/project7-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project7/project7-mobile@1x.webp 1x,
+                                        ./images/portfolio/project7/project7-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project7/project7-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project7/project7-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project7/project7-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project7/project7-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project7/project7-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project7/project7-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project7/project7-tablet@3x.jpg 3x,">
+                                <img alt="Проект издание Limited Edition" width="450" height="294" srcset="
+                                        ./images/portfolio/project7/project7-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project7/project7-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project7/project7-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project7/project7-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Издание Limited Edition</h3>
+                            <p>Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project8/project8-desktop@1x.webp 1x,
+                                        ./images/portfolio/project8/project8-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project8/project8-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project8/project8-tablet@1x.webp 1x,
+                                        ./images/portfolio/project8/project8-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project8/project8-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project8/project8-mobile@1x.webp 1x,
+                                        ./images/portfolio/project8/project8-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project8/project8-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project8/project8-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project8/project8-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project8/project8-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project8/project8-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project8/project8-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project8/project8-tablet@3x.jpg 3x,">
+                                <img alt="Проект LAB" width="450" height="294" srcset="
+                                        ./images/portfolio/project8/project8-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project8/project8-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project8/project8-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project8/project8-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Проект LAB</h3>
+                            <p>Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="products-item">
+                    <a href="">
+                        <div class="products-hover">
+                            <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="
+                                        ./images/portfolio/project9/project9-desktop@1x.webp 1x,
+                                        ./images/portfolio/project9/project9-desktop@2x.webp 2x, 
+                                        ./images/portfolio/project9/project9-desktop@3x.webp 3x,">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="
+                                        ./images/portfolio/project9/project9-tablet@1x.webp 1x,
+                                        ./images/portfolio/project9/project9-tablet@2x.webp 2x, 
+                                        ./images/portfolio/project9/project9-tablet@3x.webp 3x,">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="
+                                        ./images/portfolio/project9/project9-mobile@1x.webp 1x,
+                                        ./images/portfolio/project9/project9-mobile@2x.webp 2x, 
+                                        ./images/portfolio/project9/project9-mobile@3x.webp 3x,">
+                                <source media="(min-width: 1200px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project9/project9-desktop@1x.jpg 1x,
+                                        ./images/portfolio/project9/project9-desktop@2x.jpg 2x, 
+                                        ./images/portfolio/project9/project9-desktop@3x.jpg 3x,">
+                                <source media="(min-width: 768px)" type="image/jpg" srcset="
+                                        ./images/portfolio/project9/project9-tablet@1x.jpg 1x,
+                                        ./images/portfolio/project9/project9-tablet@2x.jpg 2x, 
+                                        ./images/portfolio/project9/project9-tablet@3x.jpg 3x,">
+                                <img alt="Проект Growing Business" width="450" height="294" srcset="
+                                        ./images/portfolio/project9/project9-mobile@1x.jpg 1x,
+                                        ./images/portfolio/project9/project9-mobile@2x.jpg 2x, 
+                                        ./images/portfolio/project9/project9-mobile@3x.jpg 3x,"
+                                    src="./images/portfolio/project9/project9-mobile@1x.jpg">
+                            </picture>
+                        </div>
+                        <div class="figcapture">
+                            <h3>Growing Business</h3>
+                            <p>Приложение</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="left">
+                <div class="footer-left-nav">
+                    <a href="./index.html" class="logo logo--footer"><span class="web">Web</span><span
+                            class="studio">Studio</span></a>
+                    <address>г. Киев, пр-т Леси Украинки, 26</address>
+                    <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+                </div>
+                <div class="footer-center-nav">
+                    <p>присоединяйтесь</p>
+                    <ul class="social-footer">
+                        <li>
+                            <a href="">
+                                <svg>
+                                    <use href='./images/icons/symbol-defs.svg#icon-Ellipseinst'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg>
+                                    <use href='./images/icons/symbol-defs.svg#icon-Ellipsetw'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg>
+                                    <use href='./images/icons/symbol-defs.svg#icon-Ellipsefb'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg>
+                                    <use href='./images/icons/symbol-defs.svg#icon-Ellipsein'></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right-nav">
+                <div class="footer-input">
+                    <p>Подпишитесь на рассылку</p>
+                    <input type="email" id="footer-mail" name="footer-mail" placeholder="E-mail">
+                </div>
+                <button type="submit" class="sign">Подписаться
+                    <img src="./images/icons/icon send.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+<script src="./js/menu.js"></script>
+</body>
+</html>

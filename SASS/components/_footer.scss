@@ -1,0 +1,139 @@
+footer {
+  padding: 60px 0;
+  background-color: $backgroundDark;
+  text-align: center;
+  .logo--footer {
+    margin-bottom: 20px;
+  }
+  address {
+    margin-bottom: 8px;
+    color: $white;
+  }
+  .contacts {
+    display: block;
+  }
+  .first-contact {
+    margin-bottom: 8px;
+  }
+  .footer-left-nav {
+    margin-bottom: 60px;
+  }
+  .footer-center-nav {
+    margin-bottom: 60px;
+  }
+  .footer-center-nav p,
+  .footer-right-nav p {
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .social-footer {
+    display: inline-flex;
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
+    a:hover svg {
+      --color4: #2196f3;
+    }
+  }
+
+  .social-footer svg {
+    width: 44px;
+    height: 44px;
+    --color5: #fff;
+    --color4: rgba(255, 255, 255, 0.1);
+  }
+  .footer-input {
+    input {
+      padding: 15px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 450px;
+      background-color: inherit;
+      margin-bottom: 20px;
+    }
+  }
+  .sign {
+    margin: 0 auto;
+    background-color: $webColor;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: $white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    img {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .footer-left-nav {
+      margin-bottom: 0;
+      text-align: center;
+      margin-right: 70px;
+    }
+    .footer-center-nav {
+      margin-bottom: 0;
+    }
+    .logo--footer {
+      margin-bottom: 25px;
+      margin-right: 0;
+    }
+    .footer-container {
+      padding-left: 65px;
+      padding-right: 90px;
+    }
+    .left {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .footer-left-nav {
+      margin-bottom: 0;
+      text-align: left;
+    }
+    //   .footer-center-nav {
+    //     margin-bottom: 0;
+    //   }
+    .logo--footer {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .footer-right-nav {
+      align-self: flex-start;
+      flex-basis: 44.7%;
+      display: flex;
+      align-items: flex-end;
+    }
+    .footer-center-nav {
+      text-align-last: left;
+    }
+    .left {
+      margin-bottom: 0;
+    }
+    .footer-input {
+      flex-basis: 62.8%;
+      text-align: left;
+      input {
+        margin-bottom: 0;
+      }
+    }
+    .sign {
+      margin-left: 12px;
+      font-size: 16px;
+      padding: 12px 28px;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.customers {
+  padding: 60px 0;
+  .customers-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .customers-item {
+    flex-basis: 43.75%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 20px 0;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:not(:nth-child(n + 5)) {
+      margin-bottom: 30px;
+    }
+    &:hover {
+      border-color: $webColor;
+    }
+    &:hover svg {
+      --color5: #2196f3;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .customers-item {
+      flex-basis: 29.42%;
+      &:nth-child(2n + 1) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(n + 5)) {
+        margin-bottom: 0;
+      }
+      &:not(:nth-child(3)) {
+        margin-right: 30px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(-n + 3) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .customers-item {
+      flex-basis: 14.16%;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.logo-1 {
+  height: 49px;
+  width: 44px;
+}
+.logo-2 {
+  height: 52px;
+  width: 40px;
+}
+.logo-3 {
+  height: 42.6px;
+  width: 41px;
+}
+.logo-4 {
+  height: 42px;
+  width: 80px;
+}
+.logo-5 {
+  height: 47px;
+  width: 59px;
+}
+.logo-6 {
+  height: 45px;
+  width: 88px;
+}
+
+// .customers {
+//   padding: 95px 0;
+//   h2 {
+//     margin-bottom: 50px;
+//     text-align: center;
+//     font-size: 36px;
+//   }
+//   a {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//   }
+//   ul {
+//     display: flex;
+//   }
+// }
+// .customers-list {
+//   width: 170px;
+//   height: 90px;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   &:hover {
+//     border-color: $webColor;
+//   }
+//   &:hover svg {
+//     --color5: #2196f3;
+//   }
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+// .logo-1 {
+//   height: 49px;
+//   width: 44px;
+// }
+// .logo-2 {
+//   height: 52px;
+//   width: 40px;
+// }
+// .logo-3 {
+//   height: 42.6px;
+//   width: 41px;
+// }
+// .logo-4 {
+//   height: 42px;
+//   width: 80px;
+// }
+// .logo-5 {
+//   height: 47px;
+//   width: 59px;
+// }
+// .logo-6 {
+//   height: 45px;
+//   width: 88px;
+// }
